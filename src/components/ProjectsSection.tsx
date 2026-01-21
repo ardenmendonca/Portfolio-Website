@@ -108,7 +108,7 @@ const projectsData = [
     ],
     icon: Building,
     tech: ["HTML/CSS", "JavaScript", "Java Spring Boot", "MySQL"],
-    github: "https://github.com/ardenmendonca/urbanlink",
+    github: "https://github.com/Aaryan-Thakur/Public_Grievance_Program",
   },
 ];
 
