@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* Fonts (keep these at the top) */
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+
+:root {
+  --background: 220 20% 6%;
+  --foreground: 210 40% 98%;
+
+  --card: 220 20% 10%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 220 20% 10%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 175 80% 50%;
+  --primary-foreground: 220 20% 6%;
+
+  --secondary: 220 20% 14%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 220 15% 18%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 175 80% 50%;
+  --accent-foreground: 220 20% 6%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 220 15% 20%;
+  --input: 220 15% 20%;
+  --ring: 175 80% 50%;
+
+  --radius: 0.75rem;
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(175 80% 50%) 0%,
+    hsl(200 80% 50%) 100%
+  );
+  --shadow-glow: 0 0 60px hsl(175 80% 50% / 0.15);
+  --glass-bg: hsl(220 20% 10% / 0.8);
+  --glass-border: hsl(175 80% 50% / 0.1);
+}
+
+/* Base */
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+/* Utility classes used by your components */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-effect {
+  box-shadow: var(--shadow-glow);
+}
+
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 3rem;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(hsl(175 80% 50% / 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(175 80% 50% / 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
