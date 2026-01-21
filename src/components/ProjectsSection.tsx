@@ -103,7 +103,7 @@ const projectsData = [
       "Civic community platform built with a responsive front-end and Java Spring Boot back-end, supporting structured issue/update submissions and authority/admin workflows for triage, responses, and resolution tracking using RESTful APIs, MySQL, and role-based permissions.",
     highlights: [
       "Full-stack development",
-      "1000+ data transactions",
+      "5000+ data transactions",
       "RESTful API implementation",
     ],
     icon: Building,
