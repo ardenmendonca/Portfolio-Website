@@ -11,7 +11,7 @@ const educationData = [
     grade: "Merit (2:1)",
     highlight: "Bicentenary Global Futures Scholarship Recipient",
     highlightDesc:
-      "Awarded from a competitive pool of over 6,000 applicants across South Asian countries",
+      "Awarded the Bicentenary Global Futures Scholarship in recognition of academic merit",
   },
   {
     institution: "Fr. Conceicao Rodrigues College of Engineering",
